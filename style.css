@@ -84,7 +84,7 @@ justify-items: center;
 }
 #welcome-section::after {
   content: "";
-  background-image: url(img/pexels-photo-2338113.jpeg);
+  background-image: url("img/pexels-photo-2338113.jpeg");
   background-size: cover;
   position: absolute;
   top: 0px;
