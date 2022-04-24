@@ -35,12 +35,11 @@ h2{
   justify-content:flex-end;
   align-items: center;
   height:100%;
-  margin-right:20px;
-  margin-top:20px;
+  margin-right:3rem;
+  margin-top:2rem;
 }
 
 .nav-list li {
-  border-radius:10px;
   margin-left:10px;
   margin-right:10px;
   padding:10px 20px 10px 20px;
@@ -93,11 +92,16 @@ justify-items: center;
   left: 0px;
   opacity: 0.2;
 }
+
 #projects{
   display:block;
   text-align: center;
   background-color: #2f3061;
   
+}
+
+#projects h2{
+  margin-top:7rem;
 }
 
 #my_work {
@@ -117,9 +121,7 @@ justify-items: center;
   top: 70vh;
   left: 0; 
 }
-#projects h2{
-  margin:20px;
-}
+
 
 #animation_works{
   display:block;
@@ -131,7 +133,7 @@ justify-items: center;
 }
 
 #animation_works h2{
-  margin:20px;
+  margin-top:7rem;
 }
 
 #animation_slick {
@@ -160,8 +162,32 @@ justify-items: center;
 }
 
 
-#contact {
+#other_works{
+  display:block;
   background-color:#2f3061;
+  text-align: center;
+  margin:10px;
+  justify-content: center;
+  align-items: center;
+  
+}
+#other_works h2{
+  margin-top:7rem;
+}
+
+#other_works::after {
+  content: "";
+  background-image: url("img/pexels-photo-2338113.jpeg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+}
+
+#contact {
   display:flex;
   flex-direction:column;
   align-items: center;
