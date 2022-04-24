@@ -49,6 +49,10 @@ h2{
   
 }
 
+.nav-list :hover {
+  background-color:#a399db;
+}
+
 .nav-list a:link, a:visited {
   color:#dfdfdf;
 }
@@ -207,6 +211,11 @@ justify-items: center;
   margin-top:7rem;
 }
 
+#other_works p{
+  margin: auto;
+  padding-top: 1rem;
+  width: 50%;
+}
 #other_works::after {
   content: "";
   background-image: url("img/pexels-pixabay-159866.jpg");
@@ -250,4 +259,15 @@ justify-items: center;
 
 #sns_icons :hover {
   background-color: #ffffff80;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
