@@ -32,25 +32,26 @@ h2{
 .nav-list {
   list-style:none;
   display:flex;
-  justify-content:flex-end;
+  justify-content:space-around;
   align-items: center;
   height:100%;
+  margin-left: 50vw;
   margin-right:3rem;
   margin-top:2rem;
 }
 
 .nav-list li {
-  margin-left:10px;
-  margin-right:10px;
   padding:10px 20px 10px 20px;
+  border: #2f3061 solid;
   background-color:#5f5980;
-  box-shadow: 6px 6px 10px black , -6px -6px 10px black;
   position:relative;
-  
+  border-radius: 25px;
+  text-align: center;
 }
 
 .nav-list :hover {
   background-color:#a399db;
+  border-radius: 25px;
 }
 
 .nav-list a:link, a:visited {
@@ -109,6 +110,12 @@ justify-items: center;
   z-index:5;
 }
 
+#projects p{
+  margin: auto;
+  padding-top: 1rem;
+  width: 50%;
+}
+
 #projects::after {
   content: "";
   background-color:#2f3061;
@@ -158,6 +165,11 @@ justify-items: center;
   margin-top:7rem;
 }
 
+#animation_works p{
+  margin: auto;
+  padding-top: 1rem;
+  width: 50%;
+}
 #animation_slick {
     display: block;
     height: 80% ;
@@ -270,4 +282,10 @@ justify-items: center;
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
+}
+
+@media only screen and (max-width: 1080px) {
+  .nav-list {
+    margin-left: 0;
+  }
 }
