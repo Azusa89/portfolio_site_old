@@ -92,22 +92,38 @@ justify-items: center;
   left: 0px;
   opacity: 0.2;
 }
-
 #projects{
+  position: relative;
   display:block;
   text-align: center;
-  background-color: #2f3061;
-  
+  background-color:#2f3061;
 }
 
 #projects h2{
   margin-top:7rem;
+  position: relative;
+  z-index:5;
+}
+
+#projects::after {
+  content: "";
+  background-color:#2f3061;
+  background-image: url("img/pexels-pixabay-270373.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
 }
 
 #my_work {
   display: block;
   height: 80% ;
   padding-top: 20vh;
+  position: relative;
+  z-index:5;
 }
 
 #my_work img{
@@ -117,14 +133,14 @@ justify-items: center;
   left:auto;
 }
 
-#my_work .slick-dots {
+.slick-dots {
   top: 70vh;
-  left: 0; 
 }
-
 
 #animation_works{
   display:block;
+  position: relative;
+  z-index:5;
   text-align: center;
   margin:10px;
   justify-content: center;
@@ -133,6 +149,8 @@ justify-items: center;
 }
 
 #animation_works h2{
+  position: relative;
+  z-index:5;
   margin-top:7rem;
 }
 
@@ -142,6 +160,7 @@ justify-items: center;
     padding-top: 10%;
     align-items: center;
     justify-content: center;
+    z-index:5;
 
 }
 
@@ -161,10 +180,23 @@ justify-items: center;
     height: 100%;
 }
 
+#animation_works::after {
+  content: "";
+  background-image: url("img/pexels-donald-tong-66134.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+}
 
 #other_works{
   display:block;
   background-color:#2f3061;
+  position: relative;
+  z-index:5;
   text-align: center;
   margin:10px;
   justify-content: center;
@@ -177,7 +209,7 @@ justify-items: center;
 
 #other_works::after {
   content: "";
-  background-image: url("img/pexels-photo-2338113.jpeg");
+  background-image: url("img/pexels-pixabay-159866.jpg");
   background-size: cover;
   position: absolute;
   top: 0px;
