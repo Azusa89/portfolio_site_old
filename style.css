@@ -9,6 +9,11 @@ html {
   scroll-behavior: smooth;
 }
 
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
 img {
   max-width:100%;
 }
@@ -240,6 +245,23 @@ justify-items: center;
   opacity: 0.2;
 }
 
+#other_works_grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 70%;
+}
+
+.other_works_item{
+  font-size: 2rem;
+  display:flex;
+  position: relative;
+  z-index:5;
+  text-align: center;
+  margin:10px;
+  justify-content: center;
+  align-items: center;
+}
+
 #contact {
   display:flex;
   flex-direction:column;
@@ -273,16 +295,6 @@ justify-items: center;
   background-color: #ffffff80;
 }
 
-.reveal{
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 2s all ease;
-}
-.reveal.active{
-  transform: translateY(0);
-  opacity: 1;
-}
 
 @media only screen and (max-width: 1080px) {
   .nav-list {
