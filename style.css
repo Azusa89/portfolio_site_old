@@ -52,11 +52,13 @@ h2{
   position:relative;
   border-radius: 25px;
   text-align: center;
+
 }
 
 .nav-list :hover {
   background-color:#a399db;
   border-radius: 25px;
+
 }
 
 .nav-list a:link, a:visited {
@@ -265,6 +267,7 @@ justify-items: center;
   border: #2f3061 solid;
   background-color:#5f5980;
   border-radius: 25px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.5) , -6px -6px 10px rgba(0, 0, 0, 0.5);
 }
 
 .other_works_item:hover{
