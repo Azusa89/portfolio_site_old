@@ -257,11 +257,20 @@ justify-items: center;
   position: relative;
   z-index:5;
   text-align: center;
-  margin:10px;
+  margin:3em;
   justify-content: center;
   align-items: center;
+  height: fit-content;
+  padding: 1rem;
+  border: #2f3061 solid;
+  background-color:#5f5980;
+  border-radius: 25px;
 }
 
+.other_works_item:hover{
+  background-color:#a399db;
+  border-radius: 25px;
+}
 #contact {
   display:flex;
   flex-direction:column;
