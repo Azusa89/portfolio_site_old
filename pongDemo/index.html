@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" type="module"></script>
+    <script defer src="script.js" type="module"></script>
     <title>Kaho Cheng Pong Demo</title>
 </head>
 <body>
@@ -13,6 +13,15 @@
      <div id="player1-score">0</div>
      <div id="player2-score">0</div>
  </div>
+
+ <!--High score element-->
+ <div id="highscore_txt"><h3>highscore</h3></div>
+ <div class="highscore">
+    <div id="player1-highscore">0</div>
+    <div id="player2-highscore">0</div>
+</div>
+<div id="resetScore"><button id="resetbtn">Reset Highscore</button></div>
+
  <div class="ball" id="ball"></div>
  <div class="paddle left" id="player1-paddle"></div>
  <div class="paddle right" id="player2-paddle"></div>
