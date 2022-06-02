@@ -156,8 +156,9 @@ justify-items: center;
 }
 
 #animation_works{
-  display:block;
+  display:inline-block;
   position: relative;
+  background-size: cover;
   z-index:5;
   text-align: center;
   margin:10px;
@@ -166,53 +167,15 @@ justify-items: center;
   
 }
 
+#animation_showreel {
+  position: relative;
+  margin-top: 8rem;
+}
+
 #animation_works h2{
   position: relative;
   z-index:5;
   margin-top:7rem;
-}
-
-#animation_works p{
-  margin: auto;
-  padding-top: 1rem;
-  width: 50%;
-}
-#animation_slick {
-    display: block;
-    height: 80% ;
-    padding-top: 10%;
-    align-items: center;
-    justify-content: center;
-    z-index:5;
-
-}
-
-.animation_item {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%; 
-    height: 0;
-    
-}
-
-.animation_item iframe{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-#animation_works::after {
-  content: "";
-  background-image: url("img/pexels-donald-tong-66134.jpg");
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.2;
 }
 
 #other_works{
@@ -251,6 +214,8 @@ justify-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 70%;
+  justify-content: center;
+  align-items: center;
 }
 
 .other_works_item{
@@ -259,10 +224,11 @@ justify-items: center;
   position: relative;
   z-index:5;
   text-align: center;
-  margin:3em;
+  margin: auto;
   justify-content: center;
   align-items: center;
   height: fit-content;
+  width: 50%;
   padding: 1rem;
   border: #2f3061 solid;
   background-color:#5f5980;
@@ -311,5 +277,20 @@ justify-items: center;
 @media only screen and (max-width: 1080px) {
   .nav-list {
     margin-left: 0;
+  }
+
+  #other_works p{
+    margin: auto;
+    padding-top: 1rem;
+    width: 50%;
+    font-size: 1rem;
+  }
+
+  #other_works h4{
+    font-size: 1rem;
+  }
+
+  #other_works_grid{
+    height: 60%;
   }
 }
