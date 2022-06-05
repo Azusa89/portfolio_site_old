@@ -167,9 +167,33 @@ justify-items: center;
   
 }
 
+#animationwrap {
+
+  display: flex;
+  flex-direction: column;
+  width:75%;
+  height: 75%;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#animationwrap h2 {
+  padding: 1rem;
+}
 #animation_showreel {
-  position: relative;
-  margin-top: 8rem;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+#animation_showreel iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 #animation_works h2{
