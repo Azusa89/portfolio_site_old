@@ -119,42 +119,18 @@ justify-items: center;
 
 #projects p{
   margin: auto;
-  padding-top: 1rem;
+  padding: 1rem;
   width: 50%;
 }
 
-#projects::after {
-  content: "";
-  background-color:#2f3061;
-  background-image: url("img/pexels-pixabay-270373.jpg");
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.2;
-}
-
 #my_work {
-  display: block;
-  height: 80% ;
-  padding-top: 20vh;
-  position: relative;
+
+  height: fit-content ;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:1rem;
   z-index:5;
 }
-
-#my_work img{
-  width: auto;
-  height: auto;
-  margin:auto;
-  left:auto;
-}
-
-.slick-dots {
-  top: 70vh;
-}
-
 #animation_works{
   display:inline-block;
   position: relative;
@@ -202,7 +178,7 @@ justify-items: center;
   margin-top:7rem;
 }
 
-#other_works{
+/*#other_works{
   display:block;
   background-color:#2f3061;
   position: relative;
@@ -264,11 +240,13 @@ justify-items: center;
   background-color:#a399db;
   border-radius: 25px;
 }
+*/
 #contact {
   display:flex;
   flex-direction:column;
   align-items: center;
   justify-content: space-evenly;
+  background-color: #2f3061;
 }
 
 #sns_icons {
