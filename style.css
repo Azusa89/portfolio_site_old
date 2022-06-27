@@ -151,6 +151,55 @@ section {
   z-index: 5;
 }
 
+.work_item {
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  transition: .5s;
+}
+
+.work_item p{
+  opacity: 0;
+  transform: scale(0);
+  font-size: 3rem;
+  color: white;
+  transition: .5s;
+
+}
+
+.work_item:hover {
+  box-shadow: 0 0 0 250px rgba(0, 0, 0, 0.63) inset;
+}
+
+.work_item:hover p{
+  opacity: 1;
+  transform: scale(1);
+}
+
+#work_item_1{
+  background-image: url("./img/Survey_form.jpg");
+}
+
+#work_item_2{
+  background-image: url("./img/Product_page.jpg");
+}
+
+#work_item_3{
+  background-image: url("./img/Tech_doc.jpg");
+}
+
+#work_item_4{
+  background-image: url("./img/PongGame.jpg");
+}
+
+#work_item_5{
+  background-image: url("./img/ToDo_List.jpg");
+}
+
 #animation_works {
   display: inline-block;
   position: relative;
@@ -206,8 +255,8 @@ section {
 
 #sns_icons {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 3rem;
+  width: 100%;
 }
 
 .contactMeIcon {
@@ -228,6 +277,7 @@ section {
 
 #sns_icons :hover {
   background-color: #ffffff80;
+  transition: .8s;
 }
 
 @media only screen and (max-width: 1080px) {
