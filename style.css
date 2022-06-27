@@ -106,23 +106,21 @@ section {
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-image: url(./img/pexels-photo-2338113.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #welcome-section h1,
 #welcome-section p {
   z-index: 5;
 }
-#welcome-section::after {
-  content: "";
-  background-image: url("img/pexels-photo-2338113.jpeg");
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.2;
+#aboutMeText {
+  padding:1rem;
+  background-color: #343434b1;
 }
+
 #projects {
   position: relative;
   min-height: 100vh;
@@ -209,6 +207,10 @@ section {
   margin: 10px;
   justify-content: center;
   align-items: center;
+  background-image: url("./img/pexels-donald-tong-66134.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 #animationwrap {
@@ -218,6 +220,7 @@ section {
   height: 75%;
   justify-content: center;
   align-items: center;
+  margin-top: 6rem;
   margin-left: auto;
   margin-right: auto;
 }
