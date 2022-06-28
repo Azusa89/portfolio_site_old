@@ -294,19 +294,4 @@ section {
     grid-template-columns: 1fr 1fr;
     z-index: 5;
   }
-
-  #other_works p {
-    margin: auto;
-    padding-top: 1rem;
-    width: 50%;
-    font-size: 1rem;
-  }
-
-  #other_works h4 {
-    font-size: 1rem;
-  }
-
-  #other_works_grid {
-    height: 60%;
-  }
 }
