@@ -14,6 +14,7 @@
     <a href="#welcome-section" ><li>About Me</li></a>
     <a href="#projects"><li>Projects</li></a>
     <a href="#animation_works"><li>Animation Works</li></a>
+    <a href="#model_Section"><li>3D models</li></a>
     <a href="#contact"><li>Contact Me</li></a>
 
   </ul> 
@@ -85,6 +86,12 @@
       </div>         
   </section>
 
+  <section id="model_Section">
+      <h1>3D models</h1>
+      <model-viewer id="mv1" shadow-intensity="1" src="./3d/shachi.glb"
+        alt="A 3D model of an inflatable whale" auto-rotate camera-controls enable-pan
+        poster=null></model-viewer>
+  </section>
   <section id="contact" class="contact-section">
     <h2>Give me a poke!</h2>
     <div id="sns_icons">
@@ -97,5 +104,9 @@
   
 </div>
  
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
 </body>
 </html>

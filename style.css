@@ -283,6 +283,18 @@ section {
   transition: .8s;
 }
 
+#mv1 {
+width:100vw;
+height:80vh;
+margin: auto;
+}
+
+#model_Section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 @media only screen and (max-width: 1080px) {
   .nav-list {
     margin-left: 0;
